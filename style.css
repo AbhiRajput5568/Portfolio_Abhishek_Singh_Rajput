@@ -1,0 +1,441 @@
+/* universal property start */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --root element start-- */
+
+:root {
+  /* --blue: #525ceb; */
+  --white: #ffffff;
+  --black: #000000;
+  --Cgreen: #00a99e;
+}
+
+/* --root element end-- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+.main {
+  width: 80%;
+  margin: auto;
+  border: 2px solid red;
+}
+@media (max-width: 1630px) {
+  .main {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* universal property end */
+
+/*---------------- container start -----------------*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-size: 15px;
+  border: 2px solid red;
+}
+/*------navbar start----------*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vh 5vw;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  border-bottom: 2px solid var(--blue);
+}
+
+.logo a {
+  color: black;
+  font-size: 2rem;
+  font-family: "Lucida Handwriting", cursive;
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  gap: 2vw;
+}
+
+.box2 i {
+  display: none;
+  font-size: 3vw;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 2em;
+}
+.box2 ul li:nth-child(5) a {
+  /* color: var(--Cgreen); */
+  /* text-decoration: underline; */
+  /* background-color: var(--Cgreen); */
+  border: 2px solid black;
+  padding: 10px 25px;
+  color: var(--black);
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.box2 ul li:nth-child(5) a:hover {
+  background-color: var(--Cgreen);
+  border: 2px solid var(--Cgreen);
+  color: var(--white);
+}
+
+/* ------- hero section start-------- */
+.hero {
+  width: 100%;
+  height: calc(100% - 150px);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("assets/img/aniimgfor.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  /* border: 2px solid red; */
+  color: var(--white);
+}
+
+/* --left box design start-- */
+.left-box {
+  width: 100%;
+  padding: 3vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  background-color: #0000009c;
+}
+
+.left-box > p > span {
+  text-decoration: underline var(--Cgreen);
+}
+
+.left-box h1 {
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 3.5em;
+}
+
+.left-box h1 span {
+  margin-left: 1vmax;
+}
+
+.left-box p {
+  font-size: 1.5em;
+}
+
+/* -hero button section start- */
+.left-btn {
+  margin: 2vw;
+}
+
+.hero-btn {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.hero-btn-2 {
+  border: 3px solid var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+  /* transition: all 0.5s; */
+}
+
+.hero-btn-2:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hero-btn-1 {
+  border: 3px solid var(--black);
+  /* transition: all 0.5s; */
+  background-color: var(--white);
+}
+
+.hero-btn-1:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.left-btn i {
+  margin-left: 5px;
+}
+/* -hero button section end- */
+
+/* ------left box design end-------- */
+
+/* --right box design start-- */
+
+.right-box {
+  width: 100%;
+  background-color: var(--blue);
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.box2 li a:hover {
+  color: var(--blue);
+}
+/* --right box design end-- */
+
+/* ----hero footer start---- */
+.hero-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vh;
+  align-items: center;
+  padding: 5px;
+  font-size: 1vw;
+}
+.hero-footer i {
+  margin-left: 5px;
+  color: var(--Cgreen);
+}
+/* ----hero footer end---- */
+
+/* -------hero section end -----------*/
+
+/*------------------- navbar end--------------- */
+
+/*----------------- container end---------------------------- */
+/*----------------- Portfolio section Start---------------------------- */
+.portfolio {
+  width: 100%;
+  height: fit-content;
+  border: 2px solid red;
+  overflow-y: hidden;
+  height: 700px;
+  position: relative;
+}
+.header,
+.skill-header {
+  width: 100%;
+  padding: 20px 0 15px;
+  border: 2px solid red;
+}
+.header > h1,
+.skill-header > h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.projectContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.proj {
+  width: 300px;
+  height: 350px;
+  perspective: 1000px; /* Creates a 3D effect */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  background: #f8f8f8;
+}
+
+.card-front img {
+  width: 80%;
+  height: auto;
+  height: 100%;
+}
+
+.card-back {
+  background: #ff5733;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.collaps {
+  width: 100%;
+  height: 250px;
+  border: 5px solid gold;
+  position: absolute;
+  /* top: 250px; */
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.386);
+  background: rgba(71, 68, 68, 0.138); /* semi-transparent */
+  backdrop-filter: blur(2.5px); /* 🔥 blur behind */
+  display: block;
+}
+.collaps > i {
+  color: red;
+  font-size: 100px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+/*----------------- Portfolio section end---------------------------- */
+/*----------------- skills section start--------------------------- */
+.skill {
+  width: 100%;
+  height: auto;
+  border: 2px solid red;
+}
+.skill-container {
+  width: 80%;
+  margin: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.skill-box {
+  width: 220px;
+  /* border: 2px solid black; */
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.4125rem;
+}
+.skill-box:hover {
+  /* background: linear-gradient(45deg, var(--white), var(--Cgreen)); */
+  transform: scale(1.2);
+}
+.skill-box > img {
+  width: 100%;
+  height: 165px;
+  object-fit: contain;
+}
+.skill-box > h4 {
+  border: 2px solid orange;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+.skill-box > progress {
+  width: 100%;
+  height: 15px;
+  margin-top: 8px;
+  appearance: none;
+}
+.skill-box > progress::-webkit-progress-bar {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.skill-box > progress::-webkit-progress-value {
+  background-color: var(--Cgreen);
+  border-radius: 10px;
+}
+/*----------------- skills section end---------------------------- */
+/* ---------------Media Query start----------------- */
+
+/* ---navbra-Media-Query-start--- */
+/* @media (max-width: 600px) {
+  .navbar {
+    height: 50px;
+  }
+  .box2 ul {
+    display: none;
+  }
+  .box2 i {
+    display: block;
+  }
+  .navbar h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .right-box {
+    width: 100vw;
+    height: 100vh;
+  }
+  .left-box {
+    position: absolute;
+    bottom: 80px;
+
+    z-index: 1;
+  }
+
+  .left-box h1 {
+    font-size: 10vw;
+    opacity: 0.8;
+  }
+
+  .img img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--blue);
+  }
+} */
+/* -------navbra-Media-Query-end------- */
+
+/* -----------------------Media Query end----------------------------- */
