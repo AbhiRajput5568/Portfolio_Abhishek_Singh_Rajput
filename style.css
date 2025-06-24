@@ -409,6 +409,36 @@ ul {
 .about-header > p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.acedmics {
+  margin: auto;
+  width: 80%;
+}
+.table {
+  width: 100%;
+}
+.table td,
+th,
+tr {
+  /* width: 100%; */
+  height: 50px;
+  text-align: start;
+  padding: 5px;
+}
+.table th:nth-child(1) {
+  width: 20%;
+}
+.table th:nth-child(3) {
+  width: 30%;
+}
+.table td > span {
+  margin-left: 130px;
+}
+.table th {
+  background-color: var(--Cgreen);
+}
+/* .table td {
+  background: linear-gradient(135deg, red, white);
+} */
 /* ---------------Media Query start----------------- */
 
 /* ---navbra-Media-Query-start--- */
