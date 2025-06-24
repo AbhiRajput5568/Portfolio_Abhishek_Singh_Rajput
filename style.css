@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Leckerli+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* universal property start */
 * {
   padding: 0;
@@ -239,7 +241,7 @@ ul {
 /*----------------- Portfolio section Start---------------------------- */
 .portfolio {
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   border: 2px solid red;
   overflow-y: hidden;
   height: 700px;
@@ -252,7 +254,8 @@ ul {
   border: 2px solid red;
 }
 .header > h1,
-.skill-header > h1 {
+.skill-header > h1,
+.about-header > h1 {
   text-align: center;
   font-size: xx-large;
   font-weight: 800;
@@ -314,7 +317,7 @@ ul {
 }
 .collaps {
   width: 100%;
-  height: 250px;
+  height: 240px;
   border: 5px solid gold;
   position: absolute;
   /* top: 250px; */
@@ -324,12 +327,14 @@ ul {
   backdrop-filter: blur(2.5px); /* 🔥 blur behind */
   display: block;
 }
-.collaps > i {
+.collaps > i,
+.ri-arrow-up-s-line {
   color: red;
   font-size: 100px;
   margin-top: 5%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 /*----------------- Portfolio section end---------------------------- */
 /*----------------- skills section start--------------------------- */
@@ -390,6 +395,20 @@ ul {
   border-radius: 10px;
 }
 /*----------------- skills section end---------------------------- */
+.about {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  margin: 40px 0 40px 0;
+}
+.about-header {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.about-header > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 /* ---------------Media Query start----------------- */
 
 /* ---navbra-Media-Query-start--- */

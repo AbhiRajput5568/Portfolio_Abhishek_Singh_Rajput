@@ -1,3 +1,11 @@
+//all js variable start
+let collaps = document.querySelector(".collaps");
+let collaps_icon = document.querySelector(".collaps i");
+let portfolio_container = document.querySelector(".portfolio");
+let collaps_upIcon = document.querySelector(".ri-arrow-up-s-line");
+
+//all js variable end
+
 //portfolio js start
 projData.forEach((p, i) => {
   let card_inner = document.createElement("div");
@@ -54,6 +62,96 @@ document.querySelectorAll(".proj").forEach((proj) => {
     gsap.to(cardInner, { rotationY: 0, duration: 0.6, ease: "power2.out" });
   });
 });
+//icon effect start
+function portfolioCollapsIcon() {
+  let bounceDown, bounceUp;
+
+  // Wait until everything is loaded
+  window.onload = () => {
+    // Start initial bounce on down icon
+    bounceDown = gsap.to(collaps_icon, {
+      y: -10,
+      duration: 0.6,
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+    });
+  };
+
+  // 🔽 Click to collapse
+  collaps_icon.addEventListener("click", () => {
+    // Stop any existing animations
+    gsap.killTweensOf(collaps_icon);
+    bounceDown?.kill();
+
+    gsap.killTweensOf(collaps_upIcon);
+    bounceUp = gsap.to(collaps_upIcon, {
+      y: -10,
+      duration: 0.6,
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+    });
+
+    // Collapse the content
+    gsap.to(collaps, {
+      height: 0,
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2.out",
+      onComplete: () => {
+        collaps.style.display = "none";
+      },
+    });
+
+    // Smoothly animate portfolio height to auto
+    portfolio_container.style.height = portfolio_container.offsetHeight + "px";
+    void portfolio_container.offsetWidth;
+    gsap.to(portfolio_container, {
+      height: "auto",
+      duration: 0.5,
+      ease: "power2.out",
+    });
+  });
+
+  // 🔼 Click to expand
+  collaps_upIcon.addEventListener("click", () => {
+    // Stop any existing animations
+    gsap.killTweensOf(collaps_upIcon);
+    bounceUp?.kill();
+
+    gsap.killTweensOf(collaps_icon);
+    bounceDown = gsap.to(collaps_icon, {
+      y: -10,
+      duration: 0.6,
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+    });
+
+    // Expand collaps section
+    collaps.style.display = "block";
+    gsap.fromTo(
+      collaps,
+      { height: 0, opacity: 0 },
+      {
+        height: "240px",
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out",
+      }
+    );
+
+    // Smoothly animate portfolio height to fixed 700px
+    gsap.to(portfolio_container, {
+      height: "700px",
+      duration: 0.5,
+      ease: "power2.out",
+    });
+  });
+}
+portfolioCollapsIcon();
+//icon effect end
 //portfolio js end
 //skill js start
 skillData.forEach((p, i) => {
