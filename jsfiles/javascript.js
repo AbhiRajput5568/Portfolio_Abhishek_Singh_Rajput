@@ -173,3 +173,29 @@ skillData.forEach((p, i) => {
   skill_container.appendChild(skillBox);
 });
 //skill js end
+//contact us code start
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbxfLos5J5fsSOUFi8Wm572AD-y5D2g4EQJHrGRNYeZ_XDKmzigWBvuLCxJF5BBijkna/exec";
+const form = document.forms["contact-form"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: new FormData(form), // ✅ Use FormData, NOT JSON
+  })
+    .then((response) => {
+      alert("Message sent!");
+      form.reset();
+    })
+    .catch((error) => {
+      alert("Error sending message!");
+      console.error(error);
+    });
+});
+
+//contact us code end
+// https://script.google.com/macros/s/AKfycbzobVxeLZLVpG3cpa6WmqAWYjZHwEsuJwpZp-Pn-UsT75hNR_FmDQ4zgjv8W14utM9v2A/exec
+
+// AKfycbzobVxeLZLVpG3cpa6WmqAWYjZHwEsuJwpZp-Pn-UsT75hNR_FmDQ4zgjv8W14utM9v2A

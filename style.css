@@ -406,12 +406,21 @@ ul {
   margin: auto;
   text-align: center;
 }
+.about-header > h1 {
+}
+.about-header > p {
+  margin: 30px 0 30px 0;
+}
 .about-header > p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .acedmics {
   margin: auto;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 .table {
   width: 100%;
@@ -432,13 +441,88 @@ tr {
 }
 .table td > span {
   margin-left: 130px;
+  font-family: cursive;
 }
 .table th {
   background-color: var(--Cgreen);
+  color: var(--white);
+  font-size: large;
 }
-/* .table td {
-  background: linear-gradient(135deg, red, white);
-} */
+/* resume */
+.resume {
+  width: 80%;
+  margin: auto;
+  /* display: flex; */
+}
+.resume > h2 {
+  /* transform: rotate(270deg); */
+  margin: 20px 0 20px 0;
+}
+.resume-content {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f3f3f3;
+}
+.resume a button {
+  /* width: 200px;
+  height: 100px; */
+  padding: 50px 80px;
+  border: 2px solid var(--Cgreen);
+  font-size: x-large;
+  cursor: pointer;
+  background-color: var(--Cgreen);
+  color: var(--white);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.resume a button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+/* about section end */
+/* contact section start */
+.contact {
+  width: 80%;
+  margin: auto;
+  border: 2px solid green;
+}
+.contact-header > h1 {
+  text-align: center;
+  padding: 10px;
+}
+.contact form {
+  width: 100%;
+  border: 2px solid red;
+  padding: 5% 15% 5% 15%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact form input,
+textarea,
+button {
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid;
+  border-radius: 0.8vmax;
+  padding: 20px 20px;
+}
+.contact form button {
+  background-color: var(--Cgreen);
+  color: var(--white);
+  cursor: pointer;
+}
+/* contact section end */
+
 /* ---------------Media Query start----------------- */
 
 /* ---navbra-Media-Query-start--- */
