@@ -44,6 +44,46 @@ function animateCursor() {
 
 animateCursor();
 // cursor effect end
+// side content start
+let menu = document.querySelector(".box2 i");
+let close = document.querySelector(".close-icon i");
+let tl = gsap.timeline({ paused: true });
+
+// Slide in sidebar
+tl.to(".side-cont", {
+  x: 0,
+  duration: 0.4,
+  ease: "power3.out",
+});
+
+// Animate menu items (links)
+tl.from(
+  ".side-cont-box ul li",
+  {
+    x: 100,
+    opacity: 0,
+    duration: 0.3,
+    stagger: 0.1,
+    ease: "power2.out",
+  },
+  "<"
+); // run together with sidebar
+
+// Start paused
+tl.pause();
+
+// Open sidebar
+menu.addEventListener("click", () => {
+  tl.play();
+});
+
+// Close sidebar
+close.addEventListener("click", (e) => {
+  e.preventDefault(); // prevent link jump
+  tl.reverse();
+});
+
+// side content start
 
 //portfolio js start
 projData.forEach((p, i) => {
@@ -195,7 +235,7 @@ portfolioCollapsIcon();
 //skill js start
 skillData.forEach((p, i) => {
   let skill_container = document.querySelector(".skill-container");
-  console.log(p, i);
+  // console.log(p, i);
   const skillBox = document.createElement("div");
   skillBox.classList.add("skill-box");
   const skillBox_img = document.createElement("img");
@@ -212,6 +252,7 @@ skillData.forEach((p, i) => {
   skill_container.appendChild(skillBox);
 });
 //skill js end
+
 //contact us code start
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbyE6bC_6KBI9b_jkglak2C1Ed9MLhqN6OGJgl-zBKFpJze37mLcAUdCkCeLzOaGJjaY/exec";
