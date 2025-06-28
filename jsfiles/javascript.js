@@ -5,6 +5,45 @@ let portfolio_container = document.querySelector(".portfolio");
 let collaps_upIcon = document.querySelector(".ri-arrow-up-s-line");
 
 //all js variable end
+// loader start
+
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+
+  setTimeout(() => {
+    preloader.style.opacity = "0";
+    preloader.style.transition = "opacity 0.6s ease";
+
+    // After fade-out, hide preloader
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 1200);
+  }, 1400);
+});
+
+// loader end
+// cursor effect start
+const cursor = document.querySelector(".cursor");
+let x = 0,
+  y = 0;
+let targetX = 0,
+  targetY = 0;
+
+document.addEventListener("mousemove", (e) => {
+  targetX = e.clientX;
+  targetY = e.clientY;
+});
+
+function animateCursor() {
+  x += (targetX - x) * 0.15;
+  y += (targetY - y) * 0.15;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
+// cursor effect end
 
 //portfolio js start
 projData.forEach((p, i) => {
@@ -175,7 +214,7 @@ skillData.forEach((p, i) => {
 //skill js end
 //contact us code start
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxfLos5J5fsSOUFi8Wm572AD-y5D2g4EQJHrGRNYeZ_XDKmzigWBvuLCxJF5BBijkna/exec";
+  "https://script.google.com/macros/s/AKfycbyE6bC_6KBI9b_jkglak2C1Ed9MLhqN6OGJgl-zBKFpJze37mLcAUdCkCeLzOaGJjaY/exec";
 const form = document.forms["contact-form"];
 
 form.addEventListener("submit", (e) => {

@@ -17,6 +17,30 @@
   </head>
 
   <body>
+    <!-- loader start -->
+    <div id="preloader">
+      <div class="loader"></div>
+      <br />
+      <p>Abhishek Rajput...</p>
+    </div>
+    <!-- cursor movement start -->
+    <div class="cursor"></div>
+    <!-- cursor movement end -->
+    <!-- side bar start -->
+    <div class="side-cont">
+      <div class="side-cont-box">
+        <ul class="">
+          <li><a href="#" class="">Home</a></li>
+          <li><a href="#" class="">Portfolio</a></li>
+          <li><a href="#" class="">About</a></li>
+          <li><a href="#" class="">Contact</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- side bar end -->
+    <!-- loader end -->
     <div class="main">
       <div class="container">
         <div class="navbar">
@@ -25,10 +49,10 @@
           </div>
           <div class="box2">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="slide-effect">Home</a></li>
+              <li><a href="#" class="slide-effect">Portfolio</a></li>
+              <li><a href="#" class="slide-effect">About</a></li>
+              <li><a href="#" class="slide-effect">Contact</a></li>
               <li><a href="#">Resume</a></li>
             </ul>
             <i class="fa-solid fa-bars"></i>
@@ -36,6 +60,7 @@
         </div>
         <div class="hero">
           <div class="left-box">
+            <h1>Hi ,</h1>
             <h1>I'm <span> Abhishek</span></h1>
             <p>a <span>pro</span>grammer</p>
             <div class="left-btn">
@@ -49,14 +74,6 @@
               ></a>
             </div>
           </div>
-          <!-- <div class="right-box">
-            <div class="img">
-              <img
-                src="assets/anime-boy-2-removebg-preview.png"
-                alt="hero-image"
-              />
-            </div>
-          </div> -->
         </div>
         <div class="hero-footer">
           <a href="#">
@@ -74,8 +91,10 @@
         </div>
       </div>
       <section class="portfolio">
-        <div class="header">
-          <h1>Portfolio</h1>
+        <div class="text-stack">
+          <!-- <h1>Portfolio</h1> -->
+          <h1 class="outline-text">Portfolio</h1>
+          <h2 class="filled-text">Portfolio</h2>
         </div>
         <div class="projectContent"></div>
         <div class="collaps">
@@ -84,15 +103,19 @@
         <i class="ri-arrow-up-s-line"></i>
       </section>
       <section class="skill">
-        <div class="skill-header">
-          <h1>Skills</h1>
+        <div class="text-stack">
+          <!-- <h1>Skills</h1> -->
+          <h1 class="outline-text">Skills</h1>
+          <h2 class="filled-text">Skills</h2>
         </div>
         <div class="skill-container"></div>
       </section>
       <section class="about">
-        <div class="about-header">
-          <h1>About Myself</h1>
-          <p>
+        <div class="text-stack">
+          <!-- <h1>About Myself</h1> -->
+          <h1 class="outline-text">About Me</h1>
+          <h2 class="filled-text">About Me</h2>
+          <p class="about-paragraph">
             " I'm an engineering student with a passion for technology,
             problem-solving, and innovation. I enjoy building real-world
             projects, learning new tools, and continuously improving my skills
@@ -153,23 +176,65 @@
         </div>
       </section>
       <section class="contact">
-        <div class="contact-header">
-          <h1>Contact Me</h1>
-          <form name="contact-form">
-            <input type="text" name="name" required placeholder="Name" />
-            <input type="email" name="email" required placeholder="E-mail" />
-            <textarea
-              name="message"
-              cols="30"
-              rows="8"
-              placeholder="Message"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+        <div class="text-stack">
+          <!-- <h1>Contact Me</h1> -->
+          <h1 class="outline-text">Contact Me</h1>
+          <h2 class="filled-text">Contact Me</h2>
         </div>
+        <form name="contact-form">
+          <input type="text" name="name" required placeholder="Name" />
+          <input type="email" name="email" required placeholder="E-mail" />
+          <input
+            type="tel"
+            name="mobile"
+            placeholder="Mobile Number"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="8"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+          <div class="socialMedia">
+            <h3>Connect With Me</h3>
+            <div class="icon">
+              <a href="https://github.com/AbhiRajput5568"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a href="in/abhishek-singh-97083a2a6"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+              <a href="in/abhishek-singh-97083a2a6"
+                ><i class="ri-twitter-x-fill"></i
+              ></a>
+              <a href="profile.php?id=100024395448361"
+                ><i class="ri-facebook-circle-fill"></i
+              ></a>
+              <a href="https://www.instagram.com/iabhi.rajput/?hl=en"
+                ><i class="ri-instagram-fill"></i
+              ></a>
+            </div>
+            <p>#297, Street No.7, New Aazad Nagar, Ludhiana (141008), Punjab</p>
+          </div>
+        </form>
       </section>
     </div>
+    <footer class="footer">
+      <ul>
+        <a href=""> <li>Home</li> </a
+        ><a href=""> <li>Portfolio</li> </a
+        ><a href=""> <li>About</li> </a
+        ><a href="">
+          <li>Contact</li>
+        </a>
+      </ul>
+      <h3>Abhishek Singh &copy 2023-2025 All Right Reserved</h3>
+    </footer>
     <script src="jsfiles/data.js"></script>
     <script src="jsfiles/javascript.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->

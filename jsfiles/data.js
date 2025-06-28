@@ -81,7 +81,7 @@ const skillData = [
     progressValue: "80",
   },
   {
-    img: "assets/img/gitImg.png",
+    img: "assets/img/gitImg2.png",
     h4: "Git Hub",
     progressValue: "60",
   },
