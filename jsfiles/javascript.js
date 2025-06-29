@@ -5,6 +5,18 @@ let portfolio_container = document.querySelector(".portfolio");
 let collaps_upIcon = document.querySelector(".ri-arrow-up-s-line");
 
 //all js variable end
+
+// disable inspect objectPosition:
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+  }
+});
+
 // loader start
 
 window.addEventListener("load", () => {
