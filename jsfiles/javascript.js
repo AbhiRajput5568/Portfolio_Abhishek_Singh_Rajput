@@ -57,6 +57,7 @@ function animateCursor() {
 animateCursor();
 // cursor effect end
 // side content start
+// Sidebar GSAP Animation
 let menu = document.querySelector(".box2 i");
 let close = document.querySelector(".close-icon i");
 let tl = gsap.timeline({ paused: true });
@@ -68,7 +69,7 @@ tl.to(".side-cont", {
   ease: "power3.out",
 });
 
-// Animate menu items (links)
+// Animate menu items
 tl.from(
   ".side-cont-box ul li",
   {
@@ -79,10 +80,7 @@ tl.from(
     ease: "power2.out",
   },
   "<"
-); // run together with sidebar
-
-// Start paused
-tl.pause();
+);
 
 // Open sidebar
 menu.addEventListener("click", () => {
@@ -91,22 +89,32 @@ menu.addEventListener("click", () => {
 
 // Close sidebar
 close.addEventListener("click", (e) => {
-  e.preventDefault(); // prevent link jump
+  e.preventDefault(); // Prevent anchor jump
   tl.reverse();
 });
 
+// Smooth scroll & close on link click
 const sidebarLinks = document.querySelectorAll(".side-cont a");
 
 sidebarLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    // Optional delay if you want scroll + then close
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute("href");
+    const targetEl = document.querySelector(targetId);
+
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close sidebar after slight delay
     setTimeout(() => {
-      tl.reverse(); // close sidebar using GSAP
-    }, 100); // adjust delay if needed
+      tl.reverse();
+    }, 300);
   });
 });
 
-// side content start
+// side content end
 
 //portfolio js start
 projData.forEach((p, i) => {
