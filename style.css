@@ -27,6 +27,7 @@ body {
   /* background-color: #f0f0f0; */
   overflow-x: hidden;
   background-color: var(--white_black);
+  scroll-behavior: smooth;
 }
 .main {
   width: 80%;
@@ -68,7 +69,7 @@ a {
 .loader {
   width: 60px;
   height: 60px;
-  border: 6px solid #00a99e;
+  border: 8px solid #00a99e;
   border-top: 6px solid transparent;
   border-radius: 50%;
   animation: spin 1s linear infinite;

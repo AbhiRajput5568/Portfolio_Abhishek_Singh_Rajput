@@ -83,6 +83,17 @@ close.addEventListener("click", (e) => {
   tl.reverse();
 });
 
+const sidebarLinks = document.querySelectorAll(".side-cont a");
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Optional delay if you want scroll + then close
+    setTimeout(() => {
+      tl.reverse(); // close sidebar using GSAP
+    }, 100); // adjust delay if needed
+  });
+});
+
 // side content start
 
 //portfolio js start
