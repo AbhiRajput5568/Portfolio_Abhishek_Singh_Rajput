@@ -29,8 +29,8 @@ window.addEventListener("load", () => {
     // After fade-out, hide preloader
     setTimeout(() => {
       preloader.style.display = "none";
-    }, 1200);
-  }, 1400);
+    }, 100);
+  }, 200);
 });
 
 // loader end
@@ -286,7 +286,7 @@ skillData.forEach((p, i) => {
 
 //contact us code start
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyE6bC_6KBI9b_jkglak2C1Ed9MLhqN6OGJgl-zBKFpJze37mLcAUdCkCeLzOaGJjaY/exec";
+  "https://script.google.com/macros/s/AKfycbx8j4yWOGgkKDWekv1I4YUFqufXweaK33nL4bnEjtaRKD0V3u97DSVZfcZhxX2gkEkOsA/exec";
 const form = document.forms["contact-form"];
 
 form.addEventListener("submit", (e) => {
