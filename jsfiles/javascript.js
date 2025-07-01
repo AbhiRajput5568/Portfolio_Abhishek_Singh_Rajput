@@ -271,6 +271,8 @@ skillData.forEach((p, i) => {
   skillBox.classList.add("skill-box");
   const skillBox_img = document.createElement("img");
   skillBox_img.src = p.img;
+  // const skillBox_i = document.createElement("i");
+  // skillBox_i.classList.add(`${p.i}`)
   const skillBox_h4 = document.createElement("h4");
   skillBox_h4.innerText = p.h4;
   const skillBox_progress = document.createElement("progress");
@@ -286,7 +288,7 @@ skillData.forEach((p, i) => {
 
 //contact us code start
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbx8j4yWOGgkKDWekv1I4YUFqufXweaK33nL4bnEjtaRKD0V3u97DSVZfcZhxX2gkEkOsA/exec";
+  "https://script.google.com/macros/s/AKfycbzy4pMyS7v1ofr35UlLklMQEc2SlOJqKcwXvh-X1t-oMWZOf-zkPRdC6PN9KDDDqT0e9Q/exec";
 const form = document.forms["contact-form"];
 
 form.addEventListener("submit", (e) => {
