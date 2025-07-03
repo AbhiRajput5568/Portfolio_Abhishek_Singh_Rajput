@@ -54,8 +54,19 @@ This is my personal developer portfolio website, created to present my skills, s
 
 ## 📸 Preview
 Example:  
-![Portfolio Preview](assets/img/portImg_1.png)
+## 📸 Preview
 
+### 🖼️ Home Page
+![Home](assets/img/portImg_1.png)
+
+### 🖼️ Projects Section
+![Projects](assets/img/portImg_2.png)
+
+### 🖼️ Skill Section
+![Contact](assets/img/portImg_3.png)
+
+### 🖼️ About Section
+![About](assets/img/portImg_4.png)
 ---
 
 ## 📬 Contact
