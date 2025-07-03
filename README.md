@@ -67,6 +67,12 @@ Example:
 
 ### 🖼️ About Section
 ![About](assets/img/portImg_4.png)
+
+### 🖼️ Contact Section
+![Contact](assets/img/portImg_5.png)
+
+### 🖼️ Footer Section
+![Footer](assets/img/portImg_6.png)
 ---
 
 ## 📬 Contact
