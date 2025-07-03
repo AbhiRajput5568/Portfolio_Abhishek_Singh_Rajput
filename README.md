@@ -11,15 +11,7 @@ This is my personal developer portfolio website, created to present my skills, s
 
 ---
 
-## 📁 Project Structure
-
-├── .vscode/ # VS Code workspace settings (optional)
-├── assets/
-│ └── img/ # Profile picture, project screenshots, icons, etc.
-├── jsfiles/
-│ └── script.js # JavaScript animations & interactions (GSAP)
-├── index.html # Main HTML structure
-├── style.css # Custom styles and layout
+<pre> ## 📁 Project Structure ``` 📁 Your Portfolio Project/ ├── .vscode/ # VS Code workspace settings (optional) ├── assets/ │ └── img/ # Profile picture, project screenshots, icons, etc. ├── jsfiles/ │ └── script.js # JavaScript animations & interactions (GSAP) ├── index.html # Main HTML structure ├── style.css # Custom styles and layout ├── README.md # Project documentation ``` </pre>
 
 
 ---
