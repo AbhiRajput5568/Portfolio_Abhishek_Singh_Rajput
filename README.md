@@ -68,11 +68,14 @@ Example:
 ### 🖼️ About Section
 ![About](assets/img/portImg_4.png)
 
+### 🖼️ Resume Section
+![About](assets/img/portImg_5.png)
+
 ### 🖼️ Contact Section
-![Contact](assets/img/portImg_5.png)
+![Contact](assets/img/portImg_6.png)
 
 ### 🖼️ Footer Section
-![Footer](assets/img/portImg_6.png)
+![Footer](assets/img/portImg_7.png)
 ---
 
 ## 📬 Contact
