@@ -1,6 +1,6 @@
 const projData = [
   {
-    image: "assets/1155.jpg",
+    image: "assets/img/wizardProject.png",
     title: "Project 1",
     subHeading: "HTML / CSS",
     description: "A simple project.",
