@@ -10,8 +10,15 @@ This is my personal developer portfolio website, created to present my skills, s
 (https://abhishekrajput55.github.io/Abhishek_Singh_Rajput)
 
 ---
+## 📁 Project Structure
 
-<pre> ## 📁 Project Structure ``` 📁 Your Portfolio Project/ ├── .vscode/ # VS Code workspace settings (optional) ├── assets/ │ └── img/ # Profile picture, project screenshots, icons, etc. ├── jsfiles/ │ └── script.js # JavaScript animations & interactions (GSAP) ├── index.html # Main HTML structure ├── style.css # Custom styles and layout ├── README.md # Project documentation ``` </pre>
+├── .vscode/ # VS Code workspace settings (optional)
+├── assets/
+│ └── img/ # Profile picture, project screenshots, icons, etc.
+├── jsfiles/
+│ └── script.js # JavaScript animations & interactions (GSAP)
+├── index.html # Main HTML structure
+├── style.css # Custom styles and layout
 
 
 ---
