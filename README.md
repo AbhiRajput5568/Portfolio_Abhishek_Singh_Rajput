@@ -54,7 +54,7 @@ This is my personal developer portfolio website, created to present my skills, s
 
 ## 📸 Preview
 Example:  
-`![Preview](assets/img/portfolio-preview.png)`
+`![Preview](assets/img/portImg_1.png)`
 
 ---
 
