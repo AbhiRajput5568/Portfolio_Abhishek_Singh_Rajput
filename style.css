@@ -684,7 +684,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   row-gap: 50px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2.5rem;
   align-items: center;
   padding: 15px;
 }
