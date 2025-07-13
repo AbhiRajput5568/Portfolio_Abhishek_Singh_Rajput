@@ -86,28 +86,13 @@ const skillData = [
     progressValue: "60",
   },
   {
-    img: "assets/img/reactImg.png",
-    h4: "React",
-    progressValue: "5",
-  },
-  {
-    img: "assets/img/nodeImg.png",
-    h4: "Node JS",
-    progressValue: "0",
-  },
-  {
-    img: "assets/img/expressImg.webp",
-    h4: "Express JS",
-    progressValue: "0",
-  },
-  {
-    img: "assets/img/mongoImg.png",
-    h4: "Mongo DB",
-    progressValue: "5",
-  },
-  {
     img: "assets/img/cppimg.png",
     h4: "C++",
     progressValue: "50",
+  },
+  {
+    img: "assets/img/mern.png",
+    h4: "MERN Stack",
+    progressValue: "40",
   },
 ];
