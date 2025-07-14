@@ -49,10 +49,7 @@ This is my personal developer portfolio website, created to present my skills, s
 
 > I built this portfolio to explore my website designing skills, practice animation using GSAP, and showcase my academic and personal web projects.
 
----
-
-## 📸 Preview
-Example:  
+--- 
 ## 📸 Preview
 
 ### 🖼️ Home Page
